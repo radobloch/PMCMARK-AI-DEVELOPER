@@ -1,0 +1,31 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/github",
+      "destination": "/github",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    }
+  ],
+  "functions": {
+    "lib/aiStudioClient.ts": {
+      "memory": 1024,
+      "maxDuration": 60
+    },
+    "lib/githubClient.ts": {
+      "memory": 512,
+      "maxDuration": 30
+    }
+  }
+}

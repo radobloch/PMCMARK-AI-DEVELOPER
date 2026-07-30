@@ -1,0 +1,6 @@
+{
+  "name": "PMCMARK AI DEVELOPER",
+  "description": "Kompletny szkielet projektu Next.js 14 (App Router) + TypeScript + Tailwind CSS dla PMCMARK AI DEVELOPER z podglądem na żywo i gotowością do deployu na Vercel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
